@@ -15,7 +15,8 @@ import { CKBox } from '@ckeditor/ckeditor5-ckbox';
 import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
 import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageUpload, PictureEditing, ImageResize } from '@ckeditor/ckeditor5-image';
+import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageUpload,
+	PictureEditing, ImageResize } from '@ckeditor/ckeditor5-image';
 import { Indent } from '@ckeditor/ckeditor5-indent';
 import { Link } from '@ckeditor/ckeditor5-link';
 import { List } from '@ckeditor/ckeditor5-list';
@@ -68,6 +69,11 @@ export default class ClassicEditor extends ClassicEditorBase {
 			]
 		},
 		image: {
+			styles: {
+				img: {
+					'display': 'inline'
+				}
+			},
 			toolbar: [
 				'imageStyle:inline',
 				'imageStyle:block',
