@@ -69,11 +69,6 @@ export default class ClassicEditor extends ClassicEditorBase {
 			]
 		},
 		image: {
-			styles: {
-				img: {
-					'display': 'inline'
-				}
-			},
 			toolbar: [
 				'imageStyle:inline',
 				'imageStyle:block',
